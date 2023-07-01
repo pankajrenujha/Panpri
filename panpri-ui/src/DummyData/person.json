@@ -1,0 +1,20 @@
+[
+  {
+    "name": {
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    "address": "261 Erdman Ford",
+    "city": "East Daphne",
+    "state": "Kentucky"
+  },
+  {
+    "name": {
+      "firstName": "Jane",
+      "lastName": "Doe"
+    },
+    "address": "769 Dominic Grove",
+    "city": "Columbus",
+    "state": "Ohio"
+  }
+]
