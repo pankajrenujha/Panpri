@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstname": "user1",
+      "lastname": "user1-last",
+      "email": "user1@testmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "user2",
+      "lastname": "user2-last",
+      "email": "user2@testmail.com"
+    },
+    {
+      "id": 3,
+      "firstname": "user3",
+      "lastname": "user3-last",
+      "email": "user3@testmail.com"
+    },
+    {
+      "id": 4,
+      "firstname": "user4",
+      "lastname": "user4-last",
+      "email": "user4@testmail.com"
+    },
+    {
+      "id": 9,
+      "firstname": "user9",
+      "lastname": "user9-last",
+      "email": "user9@testmail.com"
+    }
+  ]
+}
