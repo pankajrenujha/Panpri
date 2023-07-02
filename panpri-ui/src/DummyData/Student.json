@@ -1,0 +1,32 @@
+[
+    {
+      "name": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "Email": "abac@gmail.com"
+      },
+      "address": "261 Erdman Ford",
+      "city": "East Daphne",
+      "state": "Kentucky"
+    },
+    {
+      "name": {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "Email": "abac@gmail.com"
+      },
+      "address": "769 Dominic Grove",
+      "city": "Columbus",
+      "state": "Ohio"
+    },
+    {
+        "name": {
+          "firstName": "ABC",
+          "lastName": "Doe",
+          "Email": "abac@gmail.com"
+        },
+        "address": "769 Dominic Grove",
+        "city": "Columbus",
+        "state": "Ohio"
+      }
+  ]

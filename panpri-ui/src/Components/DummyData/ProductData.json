@@ -1,0 +1,22 @@
+{
+    "product":[
+        {
+            "Name":"ABC",
+            "Price": 67,
+            "Stock": 10,
+            "Type": "Pharma"
+        },
+        {
+            "Name":"HHH",
+            "Price": 67,
+            "Stock": 10,
+            "Type": "Laptop"
+        },
+        {
+            "Name":"UUU",
+            "Price": 67,
+            "Stock": 10,
+            "Type": "Food"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "India",
+        "value": "IN",
+        "cities":[
+            "Delhi","Mumbai"
+        ]
+    },
+    {
+        "name": "Pakistan",
+        "value": "PK",
+        "cities":[
+            "Lahore","Islamabad"
+        ]
+    },
+    {
+        "name": "Bangladesh",
+        "value": "BN",
+        "cities":[
+            "Dhaka","Chittor"
+        ]
+    }
+]
