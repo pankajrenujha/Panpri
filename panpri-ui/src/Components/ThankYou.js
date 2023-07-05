@@ -1,11 +1,12 @@
 import React from 'react'
-import { useContext } from 'react'
-import { MyContext } from './MyContext'
+import { useLocation } from 'react-router-dom'
 
-export default function ThankYou(props) {
-    const name=useContext(MyContext)
+export default function ThankYou({message}) {
+  const location = useLocation()
   return (
-    // <div>{props.name}</div>
-    <div>Welcome : {name}</div>
+    <>
+    <h2>{message}</h2>
+    <div>Welcome :{location?.details?.name} {location?.details?.email} </div>
+    </>
   )
 }
