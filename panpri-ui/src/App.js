@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import { useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
 // Bootstrap Bundle JS
 import Product from './Components/Product/product';
@@ -11,22 +10,19 @@ import { CreateStudent } from './Components/CreateStudent';
 import Register from './Components/Register';
 import ThankYou from './Components/ThankYou';
 import { MyContext } from './Components/MyContext';
+import { store } from './store';
+import { Provider } from 'react-redux';
+import { Counter } from './Components/Counter/Counter';
 
 
 function App() {
-  let data = {
-    theme: "light",
-    name: "Pankaj",
-    userId: "aox01",
-    email: "aman1@gmail.com",
-    contactNumber: "+91 9898987231",
-    noOfQuestionsSolved: 120,
-    codingStreak: 30,
-  };
+  const [ studentData, setStudentData] = useState({});
   return (
+      <Provider store={store}>
     <div className="App">
-      <MyContext.Provider value={data}>
+      
         <Header />
+        <Counter/>
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='product' element={<Product />}></Route>
@@ -35,8 +31,9 @@ function App() {
           <Route path='thankyou' element={<ThankYou />}></Route>
           <Route path='student/create' element={<CreateStudent />}></Route>
         </Routes>
-      </MyContext.Provider>
     </div>
+    </Provider>
+
   );
 
 }

@@ -1,14 +1,15 @@
-import React, { useState, createContext } from 'react'
+import React, { useState, createContext, useContext } from 'react'
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import ThankYou from './ThankYou';
+import { MyContext } from './MyContext';
 export default function Register() {
+    const {studentData, setStudentData} = useContext(MyContext);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
     const [submitted, setSubmitted] = useState(false)
     const [error, setError] = useState(false)
-    // const Name=createContext();
     const handleName = (e) => {
         setName(e.target.value)
         setSubmitted(false)
@@ -28,9 +29,10 @@ export default function Register() {
             setError(true)
         }
         else {
+            setStudentData({name, email})
             setSubmitted(true)
             setError(false)
-            navigate('/thankyou', { details: { name,email,password } })
+            navigate('/thankyou', { state: { name,email,password } })
         }
     }
     const successMessage = () => {
